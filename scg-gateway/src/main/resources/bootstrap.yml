@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: scg-gateway
+    
+  cloud:
+    gateway:
+
+      discovery:
+        locator:
+          enabled: true
+          lowerCaseServiceId: false
+
+  main:
+    allow-bean-definition-overriding: true
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+#eureka:#  client:#    enabled: false
+server:
+  max-http-header-size: 10000000
+    

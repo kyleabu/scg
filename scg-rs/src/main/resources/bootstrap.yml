@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: scg-rs
+  cloud:
+    discovery:
+      client:
+        simple:
+          local:
+            metadata:
+              isongateway: true
+eureka:
+              client:
+                fetch-registry: true
+                register-with-eureka: true

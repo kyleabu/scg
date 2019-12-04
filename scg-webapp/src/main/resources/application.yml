@@ -1,0 +1,14 @@
+security:
+  oauth2:
+    client:
+      clientId: 
+      clientSecret: 
+      accessTokenUri: 
+      userAuthorizationUri: 
+      tokenName: oauth_token
+      grant-type: authorization_code
+      authenticationScheme: query
+      clientAuthenticationScheme: form
+    resource:
+      userInfoUri: http://localhost:8089/info
+server:  port: 8081

@@ -1,0 +1,26 @@
+---
+applications:
+  ## Resource Server
+  - name: scg-rs
+    memory: 1GB
+    path: scg-rs/target/scg-rs-1.0.0.jar
+    services:
+    - scg-sso
+    - scg-eureka
+    
+## Web App
+  - name: scg-webapp
+    memory: 1GB
+    path: scg-webapp/target/scg-webapp-0.0.1.jar
+    services:
+    - scg-sso
+    - scg-eureka
+  
+
+## Spring Cloud Gateway
+  - name: scg-gateway
+    memory: 1GB
+    path: scg-gateway/target/scg-gateway-1.0.0.jar
+    services:
+    #- scg-sso
+    - scg-eureka

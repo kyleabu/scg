@@ -1,0 +1,8 @@
+---
+applications:
+- name: scg-webapp
+  memory: 1GB
+  path: target/scg-webapp-0.0.1.jar
+  services:
+  - scg-sso
+  - scg-eureka

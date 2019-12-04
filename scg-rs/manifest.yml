@@ -1,0 +1,8 @@
+---
+applications:
+- name: scg-rs
+  memory: 1GB
+  path: target/scg-rs-1.0.0.jar
+  services:
+  - scg-sso
+  - scg-eureka
